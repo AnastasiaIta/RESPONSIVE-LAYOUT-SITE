@@ -179,7 +179,7 @@ a:visited {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5px ;  
+    padding: 20px ; 
   }
   .set-nav {
     background-color: transparent;
@@ -193,7 +193,6 @@ a:visited {
   }
   .top-name {
     font-size: 2em;
-    margin: 10px auto;
   }
   .navigation-details {
     display: inline-flex;
@@ -264,18 +263,18 @@ a:visited {
 /*  --  1024px  --  */
 
 @media (min-width: 1024px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
   .set-nav {
-    margin-top: auto;
     justify-content: right;
+    align-items: center;
   }
   .top-name {
     display: flex;
-    margin: 30px auto 0px 30px;    
+    justify-content: center;
   }  
-  .navigation-details {
-    position: relative;
-    bottom: 68px;
-  }
   .top-profile {
     padding-left: 50px;
     padding-right: 50px;
