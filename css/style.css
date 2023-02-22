@@ -1,0 +1,306 @@
+/* ================================
+    --Primary layout--
+================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: #f3f1e9;
+}
+body { 
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  color: #45454d;
+  display: flex;
+  flex-direction: column;
+}
+.navigation-details {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(188, 164, 241, 0.336);
+  border-radius: 1px;
+  margin: 10px 15px;
+  font-size: 1.3em;
+  font-weight: bold;  
+  color: rgb(71, 68, 68);
+}
+h4 a, .container-title, .footer-contact, .bottom-name {
+  font-size: 1em;
+}
+h4, .mail, a, .botton-name {
+  text-decoration: none;
+}
+h4, .top-text, .container-title, .box, .footer-chat {
+  text-align: center;
+}
+h4, .bottom {
+  width: 100%;
+  font-size:x-large;
+}
+.top-name {
+  border-radius: 1px;
+  margin: 20px ;
+  padding: 10px 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+h4 {
+  padding: 10px 0;
+  margin: 5px auto;
+}
+.top-profile-image {
+  display:block; 
+  margin: 30px auto;
+  width: 70%;
+}
+.top-text {
+  margin: 25px 30px;
+  font-size: 1.6em;
+}
+.top-profile {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 10px;
+  font-size: x-large;
+}
+.container-title {
+  margin: 40px auto;
+  font-size: 2em;
+}
+.box {
+  margin: 10px auto;
+  min-height: 250px;
+  padding-top: 5px;
+  font-size: 1.4em;
+}
+.image {
+  margin: 5px auto 10px;
+}
+.image, .footer-chat, .box {
+  width: 90%;
+}
+h3 {
+  font-weight: 500;
+  font-size: 1.2em;
+  margin: 15px;
+}
+.text {
+  width: 90%;
+  margin: 10px auto;
+  color: rgb(41, 39, 39);
+  text-align: center;
+}
+.skills {
+  margin: 30px auto;
+  padding: 20px 15px 50px;
+  width: 90%;
+  max-width: 500px;
+  font-family:'Segoe UI', sans-serif;
+  text-align: center;
+  background: rgb(223, 221, 234);
+  border-bottom: 7px solid #5d58efc0;
+  border-radius: 11px;
+  transition: all .5s;
+}
+.skills:hover {
+  border-color: rgb(248, 144, 236);
+}
+ul.skills-class {
+  padding: 0;
+  text-align: center;
+}
+.skills-class li {
+  border-radius: 7px;
+  display: inline-block;
+  color: white;
+  padding: 1rem;
+  margin: 2px;
+  background-image: radial-gradient(rgb(248, 144, 236) 25%, rgb(242, 233, 241) );
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+.footer-contact {
+  margin: 50px auto 0;
+}
+.footer-chat {
+  margin: 30px auto;
+}
+.footer-contacts {
+  margin-bottom: 50px;
+  line-height: 2em;
+}
+.bottom {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(188, 164, 241, 0.336);
+}
+.footer-info {
+  text-decoration: none;
+  font-size: 1em;
+  margin: 5px 5px;
+}
+.upper-part {
+  margin: 5px;
+  display: none;
+}
+.footer-back {
+  font-size: large;
+}
+a { 
+  text-decoration: none; 
+  color: rgb(71, 68, 68);
+}
+a:visited {
+  color: inherit;
+}
+
+/* ================================
+    Media Queries
+================================ */
+/*  --  768px  --  */
+
+@media (min-width: 768px) {
+  .nav {
+    background-color: rgba(188, 164, 241, 0.336);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px ;  
+  }
+  .set-nav {
+    background-color: transparent;
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navigation-details {
+    background-color: transparent;
+  }
+  .top-name {
+    font-size: 2em;
+    margin: 10px auto;
+  }
+  .navigation-details {
+    display: inline-flex;
+    padding: 20px 0;
+  }
+  .top-profile, .container {
+    display: flex;
+  } 
+  .top-profile-image {
+    order: 1;
+    width: 40%;
+    margin: 20px 30px;
+  }
+  .top-text {
+    text-align: left;
+    font-size: 1.5em;
+    margin-right: 10px;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  .container-title {
+    width: 100%;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .box {
+    display: inline-block;
+    width: calc(45% - 5px);
+  } 
+  .box .image .text {
+    justify-content: center;    
+  }    
+  .text {
+    width: 75%;
+    display: flex;
+  }
+  .skills {
+    margin-top: 40px;
+    padding: 20px 40px 20px;
+    text-align: center;
+  }  
+  .footer-contact {
+    margin-bottom: 15px;
+  }
+  .footer-chat {
+    max-width: 600px;
+    font-size: 1.1em;
+  }
+  .footer-back{
+    display: none;
+  }
+  .bottom-name {
+    text-align: left;
+    display: block;
+    font-weight: bold;  
+  }
+  .footer-info, .upper-part {
+    display: inline;
+    font-size: medium;
+    font-weight: bold;      
+  }
+}
+
+/* ================================
+    Media Queries
+================================ */
+/*  --  1024px  --  */
+
+@media (min-width: 1024px) {
+  .set-nav {
+    margin-top: auto;
+    justify-content: right;
+  }
+  .top-name {
+    display: flex;
+    margin: 30px auto 30px 30px;    
+  }  
+  .navigation-details {
+    display: flex;
+    margin: -90px 10px auto;
+  }
+  .top-profile {
+    padding-left: 50px;
+    padding-right: 50px;
+  }	
+  .top-text {
+    margin-left: 0;
+    font-size: 1.3em;
+    width: 50%;
+  }	
+  .top-profile-image {
+    margin-right: 0;
+  }	
+  .container {
+    width: 90%;
+  }	
+  .box {
+    width: calc(31% - 50px);
+  }	 
+  .text{
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+  } 
+  .skills {
+    width: 40%;
+    font-family: 'Poppins', sans-serif;
+  }	
+}
