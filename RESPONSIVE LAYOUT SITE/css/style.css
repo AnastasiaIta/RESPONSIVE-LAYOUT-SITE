@@ -147,7 +147,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(188, 164, 241, 0.336);
-  margin: 10px;
 }
 .footer-info {
   text-decoration: none;
@@ -180,7 +179,6 @@ a:visited {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 10px;
     padding: 5px ;  
   }
   .set-nav {
