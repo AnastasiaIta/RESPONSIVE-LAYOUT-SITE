@@ -270,11 +270,11 @@ a:visited {
   }
   .top-name {
     display: flex;
-    margin: 30px auto 30px 30px;    
+    margin: 30px auto 0px 30px;    
   }  
   .navigation-details {
-    display: flex;
-    margin: -90px 10px auto;
+    position: relative;
+    bottom: 68px;
   }
   .top-profile {
     padding-left: 50px;
