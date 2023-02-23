@@ -136,10 +136,12 @@ footer {
 }
 .footer-chat {
   margin: 30px auto;
+  font-family:'Segoe UI', sans-serif;
 }
 .footer-contacts {
   margin-bottom: 50px;
   line-height: 2em;
+  font-family:'Segoe UI', sans-serif;
 }
 .bottom {
   display: flex;
@@ -291,7 +293,7 @@ a:visited {
     width: 90%;
   }	
   .box {
-    width: calc(31% - 50px);
+    width: calc(31% - 10px);
   }	 
   .text{
     font-size: 1em;
