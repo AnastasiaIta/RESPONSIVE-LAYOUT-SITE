@@ -1,2 +1,2 @@
 # RESPONSIVE-LAYOUT-SITE
-2nd PROJECT TECHDEGREE
+2nd project Techdegree
